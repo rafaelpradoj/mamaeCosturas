@@ -1,0 +1,116 @@
+/*CONFIGURAÇÕES GERAIS DAS PÁGINAS*/
+
+:root {
+    --lilas-pink: rgb(219, 174, 240);
+    --white: #F8F8FF;
+    --black: #000000;
+    --sombreado: #333131;
+    --linear-gradient: linear-gradient(rgb(201, 157, 241), #fefefe);
+    --button-color: rgb(170, 104, 184);
+
+    --Montserrat: "Montserrat", sans-serif;
+}
+
+body {
+    font-family: var(--Montserrat);
+}
+
+/*CABEÇALHO*/
+
+header {
+    background-color: var(--lilas-pink);
+    padding: 20px 0;
+    border-bottom: solid var(--black) 2px;
+    user-select: none;
+}
+
+.caixa-header {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 62px;
+    right: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: rgb(78, 66, 66);
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    transition: 0.8s all;
+}
+
+nav a:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+
+/*MAIN*/
+
+main {
+    background: var(--linear-gradient);
+}
+
+/*RODAPÉ*/
+
+footer {
+    border-top: solid var(--black) 2px;
+    text-align: center;
+    background-color: var(--lilas-pink);
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 20px;
+    padding-left: 0;
+    user-select: none;
+}
+
+.copyright {
+    color: var(--black);
+    font-size: 18px;
+    transition: 0.8s all;
+}
+
+.copyright:hover {
+    color: var(--white);
+}
+
+/*BOTÃO PRA VOLTAR AO INÍCIO DA TELA*/
+.botao-menu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+}
+  
+.botao-menu a:hover {
+    background-color: var(--button-color);
+    opacity: 1;
+}
+  
+.botao-menu a::after {
+    content: "▲";
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    transition: margin-top 250ms;
+}
+  .botao-menu a:hover::after {
+    margin-top: -8px;
+    color: var(--white);
+}

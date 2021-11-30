@@ -1,0 +1,173 @@
+/*PÁGINA CONTATO*/
+
+/*MAIN*/
+
+.formulario {
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+label {
+    font-size: 20px;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.titulo-formulario {
+    font-weight: bold;
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.input-padrao {
+    display: block;
+    margin: 12px 0 30px;
+    width: 44%;
+    padding: 8px 25px;
+    box-shadow: 5px 5px 5px var(--sombreado);
+}
+
+.contato-legend {
+    font-size: 20px;
+    margin: 15px 0 10px;
+    font-weight: bold;
+    cursor: default;
+}
+
+#telefone-radio,
+#whatsapp-radio {
+    font-size: 20px;
+    margin: 0 0 10px;
+    cursor: pointer;
+}
+
+select {
+    cursor: pointer;
+}
+
+.checkbox {
+    margin: 30px 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+#checkbox {
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.enviar {
+    width: 48%;
+    padding: 15px 0;
+    box-sizing: border-box;
+    background-color: rgb(219, 174, 240);
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border: solid black 0.5px;
+    border-radius: 5px;
+    transition: 0.5s all;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #333131;
+}
+
+.enviar:hover {
+    background-color: rgb(170, 104, 184);
+    color: white;
+    transform: scale(1.2);
+}
+
+.tabela {
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;
+    user-select: none;
+}
+
+table {
+    box-shadow: 5px 5px 5px #333131;
+}
+
+thead {
+    background-color: rgb(219, 174, 240);
+    color: black;
+    font-weight: bold;
+    transition: 0.8s all;
+    cursor: default;
+}
+
+thead:hover {
+    color: white;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px 101px;
+}
+
+/*PÁGINA CONTATO RESPONSIVA*/
+
+@media screen and (max-width: 939px) {
+    header {
+        padding-bottom: 15%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-left: -14px;
+    }
+
+    nav li {
+        margin: 10px 0 0 15px;
+    }
+
+    .caixa-header,
+    .formulario,
+    .tabela {
+        width: auto;
+    }
+
+    .formulario,
+    .tabela {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .input-padrao {
+        padding-right: 45%;
+    }
+
+    .enviar {
+        width: 60%;
+    }
+
+    .tabela {
+        margin-bottom: 30px;
+    }
+
+    .tabela th,
+    .tabela td {
+        padding: 8px 45px;
+    }
+}

@@ -1,0 +1,173 @@
+/*PÁGINA HOME*/
+
+/*MAIN*/
+
+* {
+    user-select: none;
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+    border-bottom: solid var(--black) 2px;
+}
+
+.main-home {
+    margin-top: -3px;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.utensilios {
+    border: solid var(--black) 1px;
+    width: 171px;
+    float: left;
+    margin: 0 20px 20px 0;
+    box-shadow: 5px 5px 5px var(--sombreado);
+    border-radius: 7px;
+}
+
+.principal {
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p {
+    margin: 0 0 1em;
+    line-height: 25px;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.mapa {
+    padding: 3em 0;
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-conteudo iframe {
+    border-radius: 7px;
+}
+
+.beneficios {
+    padding: 3em 0;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.itens:before {
+    content: "✵";
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.imagem-beneficios {
+    width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 5px 5px 10px var(--sombreado);
+    border-radius: 7px;
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.3;
+}
+
+/*PÁGINA HOME RESPONSIVA*/
+
+@media screen and (max-width: 939px) {
+    header {
+        padding-bottom: 15%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-left: -14px;
+    }
+
+    nav li {
+        margin: 10px 0 0 15px;
+    }
+
+    .banner {
+        height: 260px;
+    }
+
+    .caixa-header,
+    .principal,
+    .mapa-conteudo,
+    .conteudo-beneficios {
+        width: auto;
+    }
+
+    .principal {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .mapa-conteudo iframe {
+        border-radius: 0;
+    }
+
+    .beneficios {
+        padding-bottom: 15%;
+    }
+
+    .conteudo-beneficios {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .lista-beneficios {
+        margin-bottom: 30px;
+    }
+
+    .lista-beneficios,
+    .imagem-beneficios {
+        width: 100%;
+    }
+}
