@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/base.css" />
         <link rel="stylesheet" href="css/contatos.css" />
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"/>
-        <title>Contato - Noemia Costuras</title>
+        <title>Contato | Noemia Costuras</title>
     </head>
 
     <body>
@@ -45,7 +45,7 @@
                     <input class="input-padrao" type="email" id="email" name="email" autocomplete="off" placeholder="email@dominio.com" required/>
 
                     <label for="telefone"><h2 class="titulo-formulario">Telefone</h2></label>
-                    <input class="input-padrao" type="tel" id="telefone" name="phone" maxlength="11" autocomplete="off" onblur="phoneMask(this)"  placeholder="(XX) XXXXX-XXXX" required />
+                    <input class="input-padrao" id="phone" type="tel" maxlength="15" name="phone" onkeypress="mask(this, mphone)" onblur="mask(this, mphone)" autocomplete="off" placeholder="(__) ____-____" required />
 
                     <label for="mensagem"><h2 class="titulo-formulario">Mensagem</h2></label>
                     <textarea class="input-padrao" id="mensagem" autocomplete="off" cols="30" rows="10" maxlength="430" name="message" required></textarea>
@@ -118,7 +118,10 @@
         </div>
     </body>
 
+    <!--API for alerts in JS-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.1/dist/sweetalert2.all.min.js"></script>
+    <!--API for send emails-->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <!--Main JS-->
     <script src="js/form.js"></script>
 </html>

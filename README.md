@@ -1,4 +1,4 @@
-Website brand "Noemia Costuras" (HTML, CSS and JavaScript).
+Noemia Costuras Website
 
 Link do projeto:
-[https://rafaelpradoj.github.io/mamaeCosturas/]
+[https://rafaelpradoj.github.io/noemiaCosturas/]

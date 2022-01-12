@@ -22,33 +22,45 @@ const errorAlert = () => {
 
 // MÁSCARA TELEFONE FORMULÁRIO
 
-const phoneMask = phone => {
+const mask = (o, f)  => {
 
-    const value = phone.value;
-    let numberFormated
+    setTimeout(() => {
 
-    const isCellphone = value.length === 11
+        let v = mphone(o.value)
 
-    if (isCellphone) {
+        if(v != o.value) {
 
-        const part1 = value.slice(0, 2)
-        const part2 = value.slice(2, 7)
-        const part3 = value.slice(7)
-
-        numberFormated = `(${part1}) ${part2}-${part3}`
-    } else {
-
-        const part1 = value.slice(0, 2)
-        const part2 = value.slice(2, 6)
-        const part3 = value.slice(6)
-
-        numberFormated = `(${part1}) ${part2}-${part3}`
-    }
-
-    phone.value = numberFormated
+            o.value = v
+        }
+    }, 1)
 }
 
-// ENVIO DE FORMULÁRIO
+const mphone = v => {
+
+    let r = v.replace(/\D/g, "")
+
+    r = r.replace(/^0/, "");
+
+    const rSize = r.length
+
+    if (rSize > 10) {
+
+        r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
+    } else if (rSize > 5) {
+
+        r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
+    } else if (rSize > 2) {
+
+        r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
+    } else {
+
+        r = r.replace(/^(\d*)/, "($1");
+    }
+
+    return r
+}
+
+// ENVIO DE FORMULÁRIO API EMAIL JS
 
 emailjs.init('user_IFgyDb7wGDHBg6AFzO23k')
 
