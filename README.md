@@ -1,4 +1,4 @@
-<h1>:link:Noemia Costuras</h1> 
+<h1>:link: Noemia Costuras</h1> 
 
 <img alt="GitHub" src="https://img.shields.io/github/license/rafaelpradoj/noemiaCosturas">
 
